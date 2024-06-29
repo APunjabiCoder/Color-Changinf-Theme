@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Project</title>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Background-Color Change</h1>
+    
+        <button class="button" id="red" style="border-radius: 30px; background-color: red;">Red</button>
+        <button class="button" id="blue" style="border-radius: 30px; background-color: lightblue;">Blue</button>
+        <button class="button" id="green" style="border-radius: 30px; background-color: green;">Green</button>
+        <button class="button" id="Yellow" style="border-radius: 30px; background-color: yellow;">Yellow</button>
+
+    <script>
+       
+       let buttons = document.querySelectorAll("button")
+       let body = document.querySelector("body")
+        buttons.forEach(function(button){
+        button.addEventListener("click", function(e){
+            body.style.backgroundColor = e.target.id + ""
+        })
+    })
+    </script>
+</body>
+</html>
